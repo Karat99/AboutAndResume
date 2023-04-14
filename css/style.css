@@ -1,0 +1,230 @@
+body{
+    background-color: #001A32;
+}
+
+/* Intro and Nav */
+.intro{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.intro h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 150;
+    color: #ffffff;
+    max-width: 700px;
+    height: 50px;
+    margin-bottom: 0;
+}
+.intro h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: 100;
+    color: #ffffff;
+    margin: 0;
+    margin-left: 100px;
+    padding: 0%;
+    max-width: 700px;
+    height: 50px;
+}
+.intro p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #ffffff;
+    max-width: 680px;
+}
+.localNav{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin-top: 50px;
+}
+.localNav p{
+    padding: 30px;
+}
+#navBox{
+    display: grid;
+    height: 250px;
+    width: 300px;
+    background-color: #eb8062;
+    z-index: 100;
+    align-self: flex-end;
+    margin-top: 25px;
+    margin-right: 55px;
+    box-shadow:  47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 30% 30% 40%;
+    grid-template-areas:
+        "logo logo about"
+        "logo logo resume"
+        "icon email email"
+}
+.logo{
+    height: 115px;
+    width: 100px;
+    margin-top: 35px;
+    margin-left: 35px;
+    grid-area: logo;
+}
+#navBox button{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #001A32;
+    background-color: #eb8062;
+    border: none;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+#about{
+    grid-area: about;
+}
+#resume{
+    grid-area: resume;
+}
+.icon{
+    height: 30px;
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 35px;
+    grid-area: icon;
+}
+#navBox p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 37px;
+    color: #001A32;
+    grid-area: email;
+}
+
+/*Skills*/
+.skills{
+    height: 700px;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "digAccess webDev"
+        "uiInt uiInt";
+}
+.skills div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    height: 250px;
+    width: 450px;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+}
+.skills h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #001A32;
+    max-width: 350px;
+    height: 50px;
+    margin: 35px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.skills li{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 200;
+    color: #001A32;
+    max-width: 350px;
+    margin-left: 50px;
+}
+#digAccess{
+    margin-top: 20px;
+    background-color: #64b0ea;
+    grid-area: digAccess;
+}
+#webDev{
+    margin-top: 20px;
+    background-color: #ebe950;
+    grid-area: webDev;
+}
+#uiInt{
+    margin-top: 0px;
+    background-color: #eb8062;
+    grid-area: uiInt;
+}
+/*Background Info*/
+.backstory{
+    margin-bottom: 75px;
+}
+.backstory h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 150;
+    color: #ffffff;
+    max-width: 700px;
+    height: 50px;
+    margin-left: 100px;
+}
+.backstory h2{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0%;
+    max-width: 1000px;
+}
+.backstory p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+footer{
+    background-color: #64b0ea;
+    width: 100%;
+    height: 80px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footerLogo{
+    width: 50px;
+    height: 55px;
+    padding: 20px;
+}
+footer p{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #001A32;
+    padding: 20px;
+}
+.socialIcon{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
