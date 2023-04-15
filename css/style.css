@@ -6,11 +6,11 @@ body{
 .intro{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 360px;
     flex-wrap: wrap;
-    margin: 100px;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 .intro h1{
     font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
@@ -27,7 +27,7 @@ body{
     font-weight: 100;
     color: #ffffff;
     margin: 0;
-    margin-left: 100px;
+    margin-left: 10%;
     padding: 0%;
     max-width: 700px;
     height: 50px;
@@ -38,25 +38,30 @@ body{
     font-weight: 200;
     color: #ffffff;
     max-width: 680px;
+    justify-self: center;
+    align-self: center;
 }
 .localNav{
     display: flex;
     flex-direction: row;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 .localNav p{
-    padding: 30px;
+    padding: 3%;
 }
 #navBox{
     display: grid;
     height: 250px;
-    width: 300px;
+    width: 30%;
+    min-width: 175px;
     background-color: #eb8062;
     z-index: 100;
     align-self: flex-end;
-    margin-top: 25px;
-    margin-right: 55px;
+    margin-top: 2.5%;
+    margin-right: 5.5%;
+    -webkit-box-shadow: 47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
+    -moz-box-shadow: 47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
     box-shadow:  47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
     grid-template-columns: 25% 25% 50%;
     grid-template-rows: 30% 30% 40%;
@@ -102,21 +107,21 @@ body{
     font-size: 20px;
     font-weight: 700;
     text-align: left;
-    margin-top: 37px;
+    margin-top: 8%;
     color: #001A32;
     grid-area: email;
 }
 
 /*Skills*/
 .skills{
-    height: 700px;
+    height: 650px;
     margin: 100px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 75px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "digAccess webDev"
         "uiInt uiInt";
 }
@@ -124,22 +129,36 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: none;
-    height: 250px;
+    height: 260px;
     width: 450px;
     margin: 10px;
+    margin-top: 0;
     align-self: center;
     justify-self: center;
+    border-radius: 5px;
 }
-.skills h1{
+.skillsHead h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 150;
+    color: #ffffff;
+    max-width: 500px;
+    margin-left: 10%;
+}
+.skillsHead hr{
+    width: 500px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.skills h2{
     font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
     font-size: 27px;
     font-weight: 600;
     color: #001A32;
     max-width: 350px;
-    height: 50px;
-    margin: 35px;
-    margin-left: 50px;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 5px;
     text-align: center;
 }
 .skills li{
@@ -147,8 +166,9 @@ body{
     font-size: 19px;
     font-weight: 200;
     color: #001A32;
-    max-width: 350px;
-    margin-left: 50px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 7px;
 }
 #digAccess{
     margin-top: 20px;
@@ -174,9 +194,13 @@ body{
     font-size: 35px;
     font-weight: 150;
     color: #ffffff;
-    max-width: 700px;
-    height: 50px;
-    margin-left: 100px;
+    max-width: 500px;
+    margin-left: 10%;
+}
+.backstory hr{
+    width: 500px;
+    margin-left: 10%;
+    margin-bottom: 50px;
 }
 .backstory h2{
     font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -187,14 +211,14 @@ body{
     margin-bottom: 50px;
     margin-top: 50px;
     padding: 0%;
-    max-width: 1000px;
+    max-width: 700px;
 }
 .backstory p{
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200;
     color: #ffffff;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 10px;
