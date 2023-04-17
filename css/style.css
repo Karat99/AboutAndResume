@@ -27,7 +27,7 @@ body{
     font-weight: 100;
     color: #ffffff;
     margin: 0;
-    margin-left: 10%;
+    margin-left: 7%;
     padding: 0%;
     max-width: 700px;
     height: 50px;
@@ -73,8 +73,8 @@ body{
 .logo{
     height: 115px;
     width: 100px;
-    margin-top: 35px;
-    margin-left: 35px;
+    margin-top: 23%;
+    margin-left: 25%;
     grid-area: logo;
 }
 #navBox button{
@@ -84,9 +84,9 @@ body{
     color: #001A32;
     background-color: #eb8062;
     border: none;
-    margin-left: 0px;
-    margin-top: 40px;
-    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-top: 28%;
+    margin-bottom: 0%;
     text-align: left;
 }
 #about{
@@ -251,4 +251,49 @@ footer p{
     width: 30px;
     height: 30px;
     padding: 20px;
+}
+
+/*Media Queries*/
+@media all and (max-width: 767){
+    .intro h1{
+        font-size: 28px;
+        font-weight: 100;
+        max-width: 180px;
+    }
+    .intro h2{
+        font-size: 36px;
+        font-weight: 100;
+        margin-left: 0%;
+        max-width: 180px;
+    }
+    .intro p{
+        font-size: 20px;
+        max-width: 180px;
+    }
+    .logo{
+        height: 35px;
+        width: 30px;
+        margin-top: 3.5%;
+        margin-left: 3.5%;
+    }
+    #navBox button{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .icon{
+        height: 30px;
+        width: 40px;
+        margin-left: 25px;
+        margin-top: 35px;
+        grid-area: icon;
+    }
+    #navBox p{
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 8%;
+        color: #001A32;
+        grid-area: email;
+    }
 }
