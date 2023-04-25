@@ -236,9 +236,8 @@ footer{
     justify-content: center;
 }
 .footerLogo{
-    width: 50px;
-    height: 55px;
-    padding: 20px;
+    width: 45px;
+    height: 50px;
 }
 footer p{
     font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
@@ -246,6 +245,7 @@ footer p{
     font-weight: 600;
     color: #001A32;
     padding: 20px;
+    margin-top: 15px;
 }
 .socialIcon{
     width: 30px;
